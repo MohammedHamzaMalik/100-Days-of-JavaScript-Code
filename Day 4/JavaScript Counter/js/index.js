@@ -2,7 +2,7 @@
     const buttons = document.querySelectorAll(".btn-counter");
     let count = 0;
 
-
+//     adding event listener and increase decrease function
     buttons.forEach(function(button) {
         button.addEventListener('click', function () {
             if (button.classList.contains("decrease-btn")) {
