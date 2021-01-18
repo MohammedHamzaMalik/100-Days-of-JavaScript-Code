@@ -1,18 +1,3 @@
-// const degree = 6;
-// const hr = document.querySelector("#hr");
-// const min = document.querySelector("#min");
-// const sec = document.querySelector("#sec");
-
-//     setInterval(() => {
-//         let day = new Date();
-//         let hh = day.getHours() * 30;
-//         let mm = day.getMinutes() * degree;
-//         let ss = day.getSeconds() * degree;
-
-//         hr.style.transform = `rotateZ(${(hh) + (mm/12)}degree)`;
-//         min.style.transform = `rotateZ(${mm}degree)`;
-//         sec.style.transform = `rotateZ(${ss}degree)`;
-//     })
 const deg = 6;
      const hr = document.querySelector('#hr');
      const min = document.querySelector('#min');
