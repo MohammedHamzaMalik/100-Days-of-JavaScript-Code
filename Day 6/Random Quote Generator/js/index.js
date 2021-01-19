@@ -1,4 +1,5 @@
 (function() {
+//     you can also add a JSON file and link the file in this js file
     const quotes = [
      {      
             quote:"Life isn’t about getting and having, it’s about giving and being.",
