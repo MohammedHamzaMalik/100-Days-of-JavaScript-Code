@@ -13,6 +13,7 @@ function removingActiveClass() {
     })
 }
 
+// dark mode toggle 
 var selector = document.body;
 function modeChanger() {
     selector.classList.toggle('dark-mode');
