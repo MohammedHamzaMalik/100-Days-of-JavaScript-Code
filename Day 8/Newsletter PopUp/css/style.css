@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #ffdf6c;
+}
+
+.button {
+    position: relative;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    color: #5c4800;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    letter-spacing: 0.1rem;
+}
+
+#newsletter {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    z-index: 1000;
+    width: 450px;
+    padding: 80px 50px 50px;
+    transition: 0.5s;
+    border-radius: 4px;
+    visibility: hidden;
+}
+#newsletter.active {
+    visibility: visible;
+    top: 50%;
+}
+#newsletter .icon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#newsletter .icon .fa-envelope-open-o {
+    max-width: 80px;
+    color: #ffdf6c;
+}
+
+#newsletter .icon h2 {
+    text-align: center;
+    color: #5c4800;
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+#newsletter .icon p {
+    text-align: center;
+    color: #5c4800;
+}
+
+#newsletter .icon .box {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input, button {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Cinzel', serif;
+}
+
+button {
+    border: none;
+    width: 150px;
+    letter-spacing: 0.1rem;
+    background-color: #ffdf6c;
+    color: #5c4800;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.close {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 20px;
+}
