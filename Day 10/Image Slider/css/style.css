@@ -11,10 +11,9 @@ body {
 }
 
 .container {
-    /* min-height: 60vh; */
     position: relative; 
     background: url("/images/image-0.jpg") center/cover fixed no-repeat;
-    border: 0.5rem solid rgb(91, 203, 255);
+    border: 0.1rem solid rgb(91, 203, 255);
     border-radius: 0.5rem;
     min-height: 100vh;
     width: 80%;
