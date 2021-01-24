@@ -41,6 +41,9 @@ body {
   padding: 2rem 2rem 2rem 2rem;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
+input {
+    font-family: "Poppins", sans-serif;
+  }
 .error {
   color: red;
 }
