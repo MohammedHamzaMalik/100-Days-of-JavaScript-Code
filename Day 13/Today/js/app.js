@@ -1,8 +1,10 @@
 let date = new Date();
+// getting current day
 let dayNumber = date.getDay();
 let theDayIs;
 let quote;
 
+// switching between days and quotes
 switch(dayNumber){
     case 0: 
         theDayIs = 'Sunday';
