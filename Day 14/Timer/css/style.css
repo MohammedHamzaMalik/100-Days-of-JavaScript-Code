@@ -50,6 +50,8 @@ h1 {
     text-align: center;
     color: rgb(189, 189, 189);
 }
+
+/* for mobile view */
 @media only screen and (max-width: 600px) {
     input {
         font-size: 1rem;
