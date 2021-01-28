@@ -48,6 +48,7 @@ button {
   color: #fff;
 }
 
+/* animating the div from button to cart */
 .sendtocart .cartItem {
   display: block;
   animation: XAxis 1s forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
