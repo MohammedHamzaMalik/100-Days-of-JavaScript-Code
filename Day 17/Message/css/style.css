@@ -48,7 +48,7 @@ button:hover {
   padding: 0.2rem;
   color: #fff;
 }
-
+/* this will show the input message */
 .show {
   display: block;
 }
