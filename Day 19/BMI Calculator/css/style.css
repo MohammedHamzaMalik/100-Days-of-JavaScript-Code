@@ -36,6 +36,7 @@ button {
   background-color: #333;
 }
 
+/* when hovering on the calculate button  */
 button:hover {
   color: rgb(0, 0, 0);
   background-color: rgb(202, 202, 202);
