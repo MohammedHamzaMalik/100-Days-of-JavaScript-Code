@@ -79,7 +79,7 @@ h4 {
   box-shadow: 20px 20px 60px #0d1b21, -20px -20px 60px #11252d;
   padding: 1rem;
 }
-
+/* for mobile view */
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 2rem;
