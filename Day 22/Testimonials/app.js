@@ -5,7 +5,7 @@
 
   let index = 0;
   const customers = [];
-
+// making a constructor
   function Customer(nameOfCus, textOfCus) {
     this.nameOfCus = nameOfCus;
     this.textOfCus = textOfCus;
