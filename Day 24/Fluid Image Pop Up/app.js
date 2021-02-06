@@ -7,7 +7,7 @@ preview.forEach((small) => {
   small.addEventListener("click", () => {
     modal.classList.add("open");
     original.classList.add("open");
-
+//     updating src and alt text of image
     const bigSrc = small.getAttribute("data-original");
     original.src = `./images/big/${bigSrc}`;
     const alt = small.alt;
