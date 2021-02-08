@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #6b0f1a;
+  background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+  font-family: "Satisfy", cursive;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(255, 0, 157);
+  line-height: 100vh;
+  font-size: 7rem;
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  transition: all 1s ease;
+  transform: translateY(50px) translateX(50px);
+}
+
+span.fade {
+  opacity: 1;
+  transform: translateY(0px) translateX(0px);
+  color: rgb(255, 117, 202);
+}
