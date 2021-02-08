@@ -3,6 +3,7 @@ const text = heading.textContent;
 const aplha = text.split("");
 heading.textContent = "";
 
+// adding span to every alphabet/character
 for (let i = 0; i < aplha.length; i++) {
   heading.innerHTML += "<span>" + aplha[i] + "</span>";
 }
