@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: azure;
+  cursor: grabbing;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.container span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+.container span::before {
+  content: "";
+  position: absolute;
+  background: url(https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  transition: 10s;
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.container span:hover:before {
+  transition: 0s;
+  opacity: 1;
+  width: 1000%;
+  height: 1000%;
+}
