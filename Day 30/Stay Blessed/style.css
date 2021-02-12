@@ -64,7 +64,7 @@ body {
   color: #f40009;
   text-align: center;
 }
-
+/* styling the new element i */
 .container i {
   position: absolute;
   background: #f40009;
@@ -76,7 +76,7 @@ body {
   background: transparent;
   border: 1px solid #000000;
 }
-
+/* adding animations */
 @keyframes animate {
   0% {
     opacity: 0;
