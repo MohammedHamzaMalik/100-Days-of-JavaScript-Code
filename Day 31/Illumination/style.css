@@ -29,6 +29,7 @@
   left: 0;
   pointer-events: none;
   background: radial-gradient(
+/*     using the value of variable from js */
     circle at var(--x) var(--y),
     transparent -10%,
     rgba(0, 0, 0, 0.95) 25%
