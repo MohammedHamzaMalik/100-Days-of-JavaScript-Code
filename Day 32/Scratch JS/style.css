@@ -22,7 +22,8 @@ body {
   font-family: "Reggae One", cursive;
   cursor: grab;
 }
-h1 {
+
+/* h1 {
   background: #fff;
   display: flex;
   justify-content: center;
@@ -30,7 +31,8 @@ h1 {
   text-align: center;
   margin-top: 16rem;
   letter-spacing: 0.1rem;
-}
+} */
+
 span {
   display: block;
   position: absolute;
