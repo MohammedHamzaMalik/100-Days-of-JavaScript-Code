@@ -48,6 +48,7 @@ h1 {
   font-size: 2rem;
   font-weight: 800;
 }
+/* changing + to -  */
 .container .accordion.active .heading::before {
   content: "-";
   font-weight: 800;
