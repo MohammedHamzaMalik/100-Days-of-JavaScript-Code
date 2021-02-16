@@ -39,6 +39,7 @@ img {
   position: absolute;
 }
 
+/* adding effects to the images */
 .container img:nth-child(1) {
   opacity: 1;
   z-index: 4;
