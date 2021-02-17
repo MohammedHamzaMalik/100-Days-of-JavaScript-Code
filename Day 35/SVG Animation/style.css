@@ -18,6 +18,7 @@ body {
   /* animation: fill 0.5s ease forwards infinite; */
 }
 
+/* the length which we got using js will be used here for stroke-dasharray & stroke-dashoffset */
 #svg path:nth-child(2) {
   stroke-dasharray: 534.528076171875;
   stroke-dashoffset: 534.528076171875;
