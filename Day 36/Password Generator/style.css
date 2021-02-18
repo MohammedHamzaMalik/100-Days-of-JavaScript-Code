@@ -107,6 +107,7 @@ i:hover {
   align-items: center;
 }
 
+/* changing the font size of the copied password for mobile view */
 @media only screen and (max-width: 600px) {
   .show {
     font-size: 1.5rem;
