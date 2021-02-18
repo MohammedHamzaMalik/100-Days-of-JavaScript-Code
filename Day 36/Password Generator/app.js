@@ -2,6 +2,7 @@ var button = document.getElementById("button");
 var show = document.querySelector(".show");
 var copy = document.querySelector(".copy");
 
+// creating a function for generating random password using the characters given below
 button.onclick = function generatePassword() {
   var characters =
     "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*_";
@@ -16,6 +17,7 @@ button.onclick = function generatePassword() {
   show.innerHTML = "Your new Password is: <br>" + password;
 };
 
+// creating a function for showing that the generated password is copied
 copy.onclick = function copyPwd() {
   var text = document.getElementById("password");
   text.select();
