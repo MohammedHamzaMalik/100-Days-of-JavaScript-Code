@@ -4,6 +4,7 @@
   padding: 0;
 }
 body {
+  display:flex;
   width: 100%;
   height: 100vh;
   background: url(https://images.pexels.com/photos/109669/pexels-photo-109669.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
