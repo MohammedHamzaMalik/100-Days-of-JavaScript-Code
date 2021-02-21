@@ -20,11 +20,11 @@ submit.onclick = function checking() {
   let input = document.getElementById("client-text").value;
 
   if (input == "") {
-    display.innerText = "Please enter the below text";
+    display.innerText = "Please enter the text shown below👇";
   } else if (input == captcha) {
-    display.innerText = "Matched";
+    display.innerText = "Matched😎";
   } else {
-    display.innerText = "Not Matched";
+    display.innerText = "Not Matched😖";
   }
 };
 
