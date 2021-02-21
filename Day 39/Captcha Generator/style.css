@@ -43,6 +43,7 @@ button {
   background: #aa076b;
   color: #fff;
 }
+/* this will contain the generated captcha */
 .generator {
   font-size: 2rem;
   padding: 1rem;
