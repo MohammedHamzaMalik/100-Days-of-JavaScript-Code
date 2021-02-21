@@ -1,10 +1,11 @@
-var captcha = "";
-let char = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 let display = document.getElementById("status");
 let body = document.body;
 let submit = document.getElementById("submit");
 let refresh = document.getElementById("refresh");
+let char = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+var captcha = "";
 
+// displaying captcha on loading of the page
 body.onload = function generating() {
   var pwdLength = 6;
   for (let i = 0; i < pwdLength; i++) {
