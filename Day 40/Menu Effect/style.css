@@ -31,6 +31,7 @@ body {
   margin-bottom: 15px;
   background-color: #66FF66;
 }
+/* removing the margin of the last line */
 .line:last-child {
   margin-bottom: 0px;
 }
