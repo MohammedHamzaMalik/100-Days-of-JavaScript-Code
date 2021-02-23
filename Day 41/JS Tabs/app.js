@@ -20,15 +20,17 @@ tabOne.classList.add("tabOne");
 
 tabOne.addEventListener("click", () => {
   body.style.backgroundColor = "#00d8ff";
+//   changing icon in the content
   icon.innerHTML = `<i class="fab fa-react"></i>`;
+//   changing tab 
   tabOne.classList.add("tabOne");
   tabTwo.classList.remove("tabOne");
   tabThree.classList.remove("tabOne");
-
+//      changing the icon for there color
   active.classList.add("react-icon");
   active.classList.remove("vue-icon");
   active.classList.remove("angular-icon");
-
+//      changing the icon for there color
   tabOne.classList.add("react-icon");
   tabTwo.classList.remove("vue-icon");
   tabThree.classList.remove("angular-icon");
