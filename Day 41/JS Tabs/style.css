@@ -85,6 +85,7 @@ nav::after {
   background-color: #333;
   margin-bottom: 0.2rem;
 }
+/* making the lines visible */
 .lines {
   width: 70%;
   height: 8px;
