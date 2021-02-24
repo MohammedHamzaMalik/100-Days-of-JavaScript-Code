@@ -90,6 +90,7 @@ body {
 .message {
   color: #000;
 }
+/* showing message when hovered */
 .show-message:hover {
   /* opacity: 1; */
   animation: showMessage 0.5s ease-in infinite;
