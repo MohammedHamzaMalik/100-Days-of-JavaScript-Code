@@ -69,6 +69,7 @@ body {
   transition: 0.5s;
   transform-style: preserve-3d;
 }
+/* the information of the image will slide in when card is hovered */
 .wrapper .card:hover .info {
   transform: translateZ(20px) scaleY(1);
 }
