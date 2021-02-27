@@ -23,7 +23,8 @@ body {
   font-size: 5rem;
   letter-spacing: 0.8rem;
   text-align: center;
-  transform: rotate(28deg) skew(25deg);
+/*   making it rotate 30 deg and skew it 25deg */
+  transform: rotate(30deg) skew(25deg);
 }
 .words::before {
   content: attr(data-words);
