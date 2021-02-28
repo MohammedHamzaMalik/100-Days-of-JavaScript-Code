@@ -1,9 +1,11 @@
+// giving random size to the police officers
 function randomSize(min, max) {
   min = Math.ceil(40);
   max = Math.ceil(150);
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
+// rotating needle where the mouse moves
 function rotateNeedle() {
   needle.forEach(function (needle) {
     let x = needle.getBoundingClientRect().left + needle.clientWidth / 2;
@@ -15,6 +17,7 @@ function rotateNeedle() {
   });
 }
 document.querySelector("body").addEventListener("mousemove", rotateNeedle);
+
 let needle = document.querySelectorAll(".needle");
 for (let i = 0; i < needle.length; i++) {
   needle[i].style.left = Math.floor(Math.random() * 99) + "vw";
