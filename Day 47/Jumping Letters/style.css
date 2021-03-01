@@ -67,3 +67,9 @@ h1 {
     transform: translate(0, 0) rotate(360deg);
   }
 }
+@media only screen and (max-width: 600px) {
+  .letters span {
+    font-size: 8rem;
+    padding-bottom: 2rem;
+  }
+}
