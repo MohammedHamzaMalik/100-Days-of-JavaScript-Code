@@ -15,3 +15,15 @@ body {
   text-align: center;
   background: #7e00ff;
 }
+img {
+  position: absolute;
+  top: 12.5%;
+  left: 37.5%;
+}
+h1 {
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  left: 22.5%;
+  top: 55%;
+}
