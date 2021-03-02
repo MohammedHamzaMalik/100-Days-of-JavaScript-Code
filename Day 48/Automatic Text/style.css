@@ -13,8 +13,5 @@ body {
   min-height: 100vh;
   flex-direction: column;
   text-align: center;
-  background: #7e00ff; /* fallback for old browsers */
+  background: #7e00ff;
 }
-/* input {
-  width: 50px;
-} */
