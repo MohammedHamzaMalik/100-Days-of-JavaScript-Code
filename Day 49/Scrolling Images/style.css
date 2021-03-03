@@ -23,6 +23,7 @@ body {
   height: 250px;
   margin: 1rem;
   padding: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   transition: all 2s ease;
 }
 h2 {
