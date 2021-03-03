@@ -29,12 +29,15 @@ h2 {
   margin: 1rem;
   color: beige;
 }
+/* this will take the images at even position and will transform them   */
 .card:nth-of-type(even) {
   transform: translateX(-200%) rotate(90deg) scale(0.1);
 }
+/* this will take the images at odd position and will transform them   */
 .card:nth-of-type(odd) {
   transform: translateX(-200%) rotate(90deg) scale(0.1);
 }
+/* this will take the transformed images and take them to it's original position */
 .card.slidingIn {
   transform: translateX(0) rotate(0deg) scale(1);
 }
