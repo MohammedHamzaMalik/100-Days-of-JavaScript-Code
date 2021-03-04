@@ -11,6 +11,8 @@ body {
   margin: 0;
   background-color: #7e00ff;
 }
+
+/* the styling of the sqaures would change afterwards */
 .squares {
   border: 60px solid #81ff00;
   position: absolute;
