@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   text-align: center;
-  background: #81ff00; /* fallback for old browsers */
+  background: #81ff00;
 }
 .counter {
   font-size: 5rem;
@@ -35,6 +35,8 @@ span {
 .info {
   font-size: 2rem;
 }
+
+/* changing the font size for mobile view */
 @media only screen and (max-width: 600px) {
   .counter {
     font-size: 3rem;
