@@ -1,6 +1,7 @@
     const button = document.querySelector(".submit-btn");
     const body = document.body;
 
+//     adding the styles when submitted
     button.addEventListener("click", ()=> {
         button.innerText = "Submitted";
         button.style.backgroundColor = "#81FF00";
