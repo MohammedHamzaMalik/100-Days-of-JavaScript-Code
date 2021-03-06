@@ -57,7 +57,6 @@ body {
     transition: all 0.5s ease;
     box-shadow:2px 2px 30px rgb(255, 254, 254),
     inset -2px -2px 20px rgba(0,0,0,0.1);
-    /* animation: animate 5s ease; */
 }
 
 @keyframes animate {
