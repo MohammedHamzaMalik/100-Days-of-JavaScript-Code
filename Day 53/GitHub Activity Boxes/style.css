@@ -14,7 +14,7 @@ body {
   background-color: #fffafa;
 }
 h1 {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
