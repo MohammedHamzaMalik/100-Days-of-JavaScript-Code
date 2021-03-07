@@ -35,7 +35,10 @@ h1 {
   height: 15px;
   width: 15px;
   transition: 3s ease;
+  overflow:hidden;
+  border-radius: 2px;
 }
 .activity:hover {
   transition-duration: 0s;
+  overflow:hidden;
 }
