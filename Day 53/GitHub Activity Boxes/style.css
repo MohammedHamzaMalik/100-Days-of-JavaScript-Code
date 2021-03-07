@@ -31,9 +31,9 @@ h1 {
 .activity {
   background-color: rgb(214, 214, 214);
   box-shadow: 0 0 2px rgb(151, 151, 151);
-  margin: 2px;
-  height: 20px;
-  width: 20px;
+  margin: 5px;
+  height: 15px;
+  width: 15px;
   transition: 3s ease;
 }
 .activity:hover {
