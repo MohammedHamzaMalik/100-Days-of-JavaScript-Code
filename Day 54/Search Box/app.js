@@ -9,3 +9,4 @@ button.addEventListener("click", () => {
   x.classList.toggle("active");
   input.focus();
 });
+// in the above lines of code we will toggle the class active for the width of search container, for changing the symbol
