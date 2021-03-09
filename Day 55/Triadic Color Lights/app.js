@@ -1,6 +1,7 @@
 const light = document.querySelectorAll(".light");
-let active = 0;
 var body = document.body;
+
+let active = 0;
 
 setInterval(() => {
     changeColor();
@@ -9,9 +10,7 @@ setInterval(() => {
 function changeColor() {
     light[active].className = 'light';
     active++;
-    // if(active==0){
-    //     body.style.backgroundColor = "#00FFFC";
-    // }
+    
     if(active>2){
         active=0
         body.style.backgroundColor = "#00FFFC";
@@ -20,7 +19,7 @@ function changeColor() {
     } else if (active==2){
         body.style.backgroundColor = "#fffc00";
     }
-    const present = light[active];
+    const presentLight = light[active];
 
-    present.classList.add(present.getAttribute('color'));
+    presentLight.classList.add(presentLight.getAttribute('color'));
 }
