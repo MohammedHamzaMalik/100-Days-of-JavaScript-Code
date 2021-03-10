@@ -13,6 +13,7 @@ body {
     overflow: hidden;
 }
 .drop {
+/*     first color from the triadic colors */
     background-color: #00FFFC;
     height: 5rem;
     width: 5rem;
@@ -34,12 +35,14 @@ body {
         opacity: 0.5;
         transform: scale(3);
         border-radius: 35%;
+        /*     second color from the triadic colors */
         background-color: #FC00FF;
     }
     100% {
         opacity: 1;
         transform: scale(4);
         border-radius: 50%;
+        /*     third color from the triadic colors */
         background-color: #fffc00;
     }
 }
