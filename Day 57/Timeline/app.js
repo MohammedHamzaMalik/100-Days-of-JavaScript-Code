@@ -5,6 +5,7 @@ const circles = document.querySelectorAll(".circle");
 
 let step = 1;
 
+// function for changing steps
 function main() {
   circles.forEach((circle, index) => {
     if (index < step) {
