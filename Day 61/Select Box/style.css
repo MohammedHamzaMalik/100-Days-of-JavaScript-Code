@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Architects Daughter", cursive;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background: #d9a7c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fffcdc,
+    #d9a7c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fffcdc,
+    #d9a7c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #333;
+}
+
+p {
+  font-size: 1.2rem;
+  /* letter-spacing: 1px; */
+}
+
+.container {
+  height: 22rem;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  width: 15rem;
+  height: 100%;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.box .by_default {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.box .by_default li {
+  padding: 1rem;
+}
+
+.box .by_default:before {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border: 2px solid;
+  border-color: transparent transparent #333 #333;
+  transform: rotate(-45deg);
+}
+
+.box .options {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  transform: translateY(-100%);
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.box .options li {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.box .options li:last-of-type {
+  border: none;
+}
+
+.box .options li:first-child:hover {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.box .options li:last-child:hover {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.box .options li:hover {
+}
+
+.box .sharing {
+  display: flex;
+  align-items: center;
+}
+
+.box .sharing .share-icon {
+  margin-right: 1.1rem;
+  margin-left: 0.9rem;
+}
+
+.box.active .options {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.box.active .by_default:before {
+  top: 28px;
+  transform: rotate(-225deg);
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-instagram {
+  color: #e1306c;
+}
+.fa-snapchat {
+  color: #fffc00;
+}
+.fa-twitter {
+  color: #1da1f2;
+}
