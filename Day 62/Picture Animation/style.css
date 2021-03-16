@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+.settings {
+  background-color: #1B1464;
+  color: #fff;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.settings select {
+  margin: 0 0 20px;
+}
+
+.block {
+  background-image: url("https://images.pexels.com/photos/2356059/pexels-photo-2356059.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  position: absolute;
+  transition: all 1000ms ease;
+}
+
+/*# sourceMappingURL=style.css.map */
