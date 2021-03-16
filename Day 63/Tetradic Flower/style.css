@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1e00ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff0061,
+    #6dd5fa,
+    #1e00ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff0061,
+    #6dd5fa,
+    #1e00ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: -5rem;
+}
+.leaf {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #00ff9e;
+  border-radius: 50px 0;
+  transform-origin: 100% 0;
+  opacity: 0.3;
+}
+.animation {
+  animation: leaf 5s ease;
+}
+@keyframes leaf {
+  to {
+    border-radius: 100px 0;
+  }
+}
+.trunk {
+  display: flex;
+  height: 250px;
+  width: 5px;
+  margin-top: 9.25rem;
+  margin-left: 6.25rem;
+  background-color: #966f33;
+  position: absolute;
+}
