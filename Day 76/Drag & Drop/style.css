@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Recursive", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #333;
+}
+h1 {
+  text-align: center;
+  margin: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 0rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  margin: 0 auto;
+  background-color: #555;
+  flex-wrap: wrap;
+}
+.box {
+  width: 10vw;
+  height: 10vh;
+  cursor: move;
+  position: relative;
+}
+.one {
+  background-color: green;
+}
+.two {
+  background-color: hotpink;
+}
+.three {
+  background-color: indigo;
+}
+.four {
+  background-color: khaki;
+}
+.five {
+  background-color: lightseagreen;
+}
+.six {
+  background-color: lime;
+}
+.seven {
+  background-color: maroon;
+}
+.eight {
+  background-color: orange;
+}
+.nine {
+  background-color: red;
+}
+.ten {
+  background-color: turquoise;
+}
+.eleven {
+  background-color: wheat;
+}
+.twelve {
+  background-color: yellow;
+}
+.drag-enter {
+  border: 2px dashed darkblue;
+}
