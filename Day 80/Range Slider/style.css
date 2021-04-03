@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: "Source Code Pro", monospace;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #333;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+div {
+  position: relative;
+}
+#rangeValue {
+  position: relative;
+  text-align: center;
+  display: block;
+  font-size: 8rem;
+  font-weight: 800;
+  z-index: 1;
+  color: red;
+}
+#rangeValue::after {
+  content: "%";
+}
+.range {
+  position: relative;
+  width: 350px;
+  height: 35px;
+  appearance: none;
+  background: #40e0d0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  outline: none;
+  border-radius: 30px;
+  border: 2px solid #000;
+  box-shadow: 0 0 0 2px #151515, inset 0 0 5px #000;
+  z-index: 1;
+  overflow: hidden;
+}
+.range::-webkit-slider-thumb {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: #40e0d0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  cursor: pointer;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  box-shadow: -415px 0 0 400px red;
+}
