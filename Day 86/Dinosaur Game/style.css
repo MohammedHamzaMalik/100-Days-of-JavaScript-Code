@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'RocknRoll One', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+#score {
+    font-size: 2rem;
+    margin-bottom: 10%;
+}
+#message {
+    opacity: 0;
+    margin-bottom: 0.5rem;
+}
+#game {
+    width: 31.25rem;
+    height: 12.5rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: #555;
+    position: relative;
+    top: 150px;
+}
+.animate {
+    animation: jump 0.5s;
+}
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 100px;
+    }
+    70% {
+        top: 100px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+#block {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: block 2.5s linear infinite;
+}
+@keyframes block {
+    0% {
+        left: 480px;
+    }
+    100% {
+        left: -10px;
+    }
+}
+#btn {
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 2.5%;
+    cursor: pointer;
+}
