@@ -1,0 +1,62 @@
+:root {
+  --width: 400px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#game {
+  top: 10%;
+  height: 31.25rem;
+  width: 31.25rem;
+  margin: auto;
+  border: 2px solid #000;
+}
+#btn {
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  margin-top: 0.5rem;
+  outline: none;
+  border: none;
+  display: block;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#btn:hover {
+  background-color: red;
+  color: #fff;
+}
+.slider {
+  visibility: hidden;
+  height: 1.25rem;
+  width: 6.25rem;
+  background-color: red;
+  position: relative;
+}
+#slider1 {
+  visibility: visible;
+}
+.animate {
+  animation: slide 4s linear infinite;
+}
+@keyframes slide {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: var(--width);
+  }
+  100% {
+    left: 0px;
+  }
+}
