@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  user-select: none;
+}
+.landing {
+  height: 100vh;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.belowPage {
+  height: 100vh;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
