@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+  background: #00b4d8;
+}
+#canvasID {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+p {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  opacity: 0;
+}
