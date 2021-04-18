@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Zen Dots", cursive;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(./img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+section .layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(./img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+section .layer:nth-child(1) {
+  filter: blur(10px);
+}
+section .layer:nth-child(2) {
+  clip-path: circle(150px at var(--x) var(--y));
+}
+section .layer h2 {
+  position: absolute;
+  font-size: 20vw;
+  transform: translate(0, 0);
+}
+.hover {
+  position: absolute;
+  top: -150px;
+  left: -150px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+  transform: translate(var(--x), var(--y));
+}
