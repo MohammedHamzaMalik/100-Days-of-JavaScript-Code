@@ -5,10 +5,9 @@
 }
 body {
   font-family: Helvetica, sans-serif;
-  background: #f0c27b; /* fallback for old browsers */
+  background: #f0c27b;
 }
 .wrapper {
-  /* border: 1px solid black; */
   width: 800px;
   height: 600px;
   position: absolute;
