@@ -1,4 +1,4 @@
-# Getting started with Twitter-Bot
+# Getting started with 100-Days-of-JavaScript-Code
 
 ## How to Contribute? ✍
 
