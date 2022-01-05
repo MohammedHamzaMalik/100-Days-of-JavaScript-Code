@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  background: #81ff00;
+}
+.counter {
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+.cases {
+  color: #333;
+}
+.deaths {
+  color: red;
+}
+.recovered {
+  color: green;
+}
+span {
+  font-size: 3rem;
+  color: #7e00ff;
+}
+.info {
+  font-size: 2rem;
+}
+
+/* changing the font size for mobile view */
+@media only screen and (max-width: 600px) {
+  .counter {
+    font-size: 3rem;
+  }
+  span {
+    font-size: 2rem;
+  }
+}

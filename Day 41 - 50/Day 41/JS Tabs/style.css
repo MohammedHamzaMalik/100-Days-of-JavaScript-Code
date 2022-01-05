@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #00d8ff;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  transition: all 1s;
+}
+
+.wrapper {
+  width: 750px;
+  height: 400px;
+  box-shadow: 0px 2px 4px black;
+  background: white;
+  overflow: hidden;
+  z-index: 3;
+}
+.container {
+  position: relative;
+  width: 750px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.459);
+}
+nav {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid gainsboro;
+  z-index: 8;
+  background: white;
+  color: rgb(150, 240, 177);
+}
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: gray;
+  font-size: 1.5rem;
+}
+nav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 6px;
+  background: rgba(231, 228, 228, 0.801);
+  border-radius: 5px;
+}
+.info {
+  display: flex;
+  width: 750px;
+  height: 100%;
+  padding-top: 2rem;
+}
+.item {
+  width: 750px;
+  color: #000;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.link {
+  transition: all 0.3s;
+}
+.tabOne {
+  color: rgb(22, 22, 22);
+  transform: scale(1.1);
+  border-top: 1px solid black;
+  background-color: #333;
+  margin-bottom: 0.2rem;
+}
+/* making the lines visible */
+.lines {
+  width: 70%;
+  height: 8px;
+  margin-top: 2.8rem;
+  background: #eaeaea;
+  border-radius: 8px;
+}
+.line-box {
+  width: 70%;
+  height: 40px;
+  margin-top: 1rem;
+  background: gainsboro;
+  border-radius: 8px;
+}
+.one {
+  width: 70%;
+}
+.two {
+  width: 50%;
+}
+.three {
+  width: 90%;
+}
+.item i {
+  margin-top: 1rem;
+  font-weight: normal;
+  font-size: 5rem;
+  color: rgb(12, 12, 12);
+}
+.react-icon i {
+  color: #00d8ff;
+}
+.vue-icon i {
+  color: #42b883;
+}
+.angular-icon i {
+  color: #b52e31;
+}

@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2e2c2c,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2e2c2c,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  position: relative;
+  width: 319px;
+  height: 640px;
+  /* background: rgba(0,0,0,0.2); */
+  transform: rotate(-30deg) skew(25deg) scale(0.8);
+  margin-top: 12rem;
+}
+
+img {
+  /* Aspect Ratio */
+  width: 319px;
+  height: 640px;
+  position: absolute;
+}
+
+/* adding effects to the images */
+.container img:nth-child(1) {
+  opacity: 1;
+  z-index: 4;
+}
+.container img:nth-child(2) {
+  opacity: 0.8;
+  z-index: 3;
+}
+.container img:nth-child(3) {
+  opacity: 0.6;
+  z-index: 2;
+}
+.container img:nth-child(4) {
+  opacity: 0.4;
+  z-index: 1;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Captcha Generator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="status" id="status"></h1>
+<!--     captcha generator div -->
+    <div class="generator-box">
+      <input type="text" readonly id="generator" class="generator" />
+    </div>
+    <div class="your-chance">
+      <input
+        type="text"
+        class="client-text"
+        id="client-text"
+        placeholder="Enter the captcha!"
+      />
+    </div>
+    <button class="submit" id="submit" type="button">Submit</button>
+    <button class="refresh" id="refresh" type="button">Refresh</button>
+    <script src="./app.js" async defer></script>
+  </body>
+</html>

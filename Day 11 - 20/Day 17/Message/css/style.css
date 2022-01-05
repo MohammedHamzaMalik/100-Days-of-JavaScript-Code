@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  text-align: center;
+  background: #61e7ff;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  padding: 3rem;
+  border-radius: 50px;
+  background: #61e7ff;
+  box-shadow: inset 20px 20px 60px #52c4d9, inset -20px -20px 60px #70ffff;
+}
+
+input {
+  font-family: "Montserrat", sans-serif;
+  padding: 0.3rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+button {
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #fff;
+}
+button:hover {
+  background: #52c4d9;
+  color: #fff;
+}
+.for-invalid-input {
+  display: none;
+  background-color: rgb(197, 61, 61);
+  border-radius: 5px;
+  padding: 0.2rem;
+  color: #fff;
+}
+/* this will show the input message */
+.show {
+  display: block;
+}

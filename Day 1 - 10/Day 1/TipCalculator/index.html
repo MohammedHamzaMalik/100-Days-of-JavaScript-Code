@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tip Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+       <div class="container">
+           <div class="calculator-container">
+                <div class="heading">
+                    <h1>Tip Calculator</h1>
+                </div>
+                <form action="">
+                    <div class="bill-amount">
+                        <p>Please enter the amount of your bill: </p>
+                        <label for="bill">Rs. </label><input id="bill" type="text" placeholder="Bill Amount">
+                    </div>
+                    <div class="service-container">
+                        <p>How was your service?</p>
+                        <label for="service"></label><select name="" id="service">
+                            <option disabled selected value="0">Select an option</option>
+                            <option value="0.35">35&#37; &#45; Amazing</option>
+                            <option value="0.25">25&#37; &#45; Good</option>
+                            <option value="0.20">20&#37; &#45; Satisfactory</option>
+                            <option value="0.15">15&#37; &#45; Bad</option>
+                            <option value="0.10">10&#37; &#45; Disgusting</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="people">
+                    <p>How many people are sharing the bill?</p>
+                    <label for="numOfPeople"></label><input type="text" name="" id="numOfPeople" placeholder="Number of People">
+                    <br>
+                    <br>
+                    <button id="calculate-btn" type="button">Calculate</button>
+                </div>
+           </div>
+           <div id="tip-container">
+               Rs. <span id="tip">0.00</span> <small id="each">each</small>
+           </div>
+       </div>
+        <script src="js/index.js" type="text/javascript"></script>
+    </body>
+</html>

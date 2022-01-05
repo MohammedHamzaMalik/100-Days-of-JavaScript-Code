@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #333;
+}
+#message {
+    color: #fff;
+    margin-top: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#game {
+  width: 400px;
+  height: 500px;
+  border: 2px solid #000;
+  margin: auto;
+  overflow: hidden;
+  background-color: #fff;
+}
+#ball {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: relative;
+  border-radius: 50%;
+  top: 400px;
+  left: 190px;
+  z-index: 1000000;
+}
+.block {
+  width: 400px;
+  height: 20px;
+  background-color: #000;
+  position: relative;
+  top: 100px;
+  margin-top: -20px;
+}
+.hole {
+  width: 40px;
+  height: 20px;
+  background-color: #fff;
+  position: relative;
+  top: 100px;
+  margin-top: -20px;
+}

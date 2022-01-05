@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Questrial", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  cursor: pointer;
+  background-color: turquoise;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: none;
+  outline: none;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  transition: 0.5s;
+  width: 10rem;
+  letter-spacing: 0.5rem;
+  line-height: 1.3rem;
+}
+.button:active {
+  transform: translateX(10%) translateY(10%);
+  box-shadow: 0px 0px 0px #fff;
+}
+.notification {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  position: relative;
+  color: #f2f2f2;
+}
+.notification::after {
+  min-width: 20px;
+  height: 20px;
+  content: attr(data-count);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: turquoise;
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  transition: 0.3s;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.5);
+  will-change: opacity, transform;
+}
+.notification::before {
+  content: "\f0f3";
+  font-family: "FontAwesome";
+  display: block;
+  font-size: 3rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.notification.count::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.show-message {
+  display: flex;
+  position: absolute;
+  top: -60px;
+  padding-left: 100px;
+  opacity: 0;
+  height: 110px;
+}
+.message {
+  color: #000;
+}
+/* showing message when hovered */
+.show-message:hover {
+  /* opacity: 1; */
+  animation: showMessage 0.5s ease-in infinite;
+}
+
+.notification.notify::before {
+  animation: bell 1s ease-out;
+  transform-origin: center top;
+}
+
+@keyframes bell {
+  0% {
+    transform: rotate(40deg);
+  }
+  12.5% {
+    transform: rotate(-35deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  37.5% {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  62.5% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  87.5% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes showMessage {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  margin-top: 1rem;
+  background-color: beige;
+}
+.card {
+  background: url(https://images.pexels.com/photos/289323/pexels-photo-289323.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-size: cover;
+  border-radius: 5px;
+  width: 500px;
+  height: 250px;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 2s ease;
+}
+h2 {
+  margin: 1rem;
+  color: beige;
+}
+/* this will take the images at even position and will transform them   */
+.card:nth-of-type(even) {
+  transform: translateX(-200%) rotate(90deg) scale(0.1);
+}
+/* this will take the images at odd position and will transform them   */
+.card:nth-of-type(odd) {
+  transform: translateX(-200%) rotate(90deg) scale(0.1);
+}
+/* this will take the transformed images and take them to it's original position */
+.card.slidingIn {
+  transform: translateX(0) rotate(0deg) scale(1);
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 300px;
+    height: 450px;
+  }
+}

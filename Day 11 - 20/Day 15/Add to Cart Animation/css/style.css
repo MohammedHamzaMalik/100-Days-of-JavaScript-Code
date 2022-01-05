@@ -1,0 +1,122 @@
+html,
+body {
+  height: 100vh;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 17.5rem;
+}
+
+button {
+  position: relative;
+  padding: 1.5rem;
+  outline: none;
+  border: none;
+  background-color: rgb(255, 175, 1);
+  border-radius: 10px;
+  font-size: 1.55rem;
+  cursor: pointer;
+}
+
+.cartItem {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: -10px;
+  right: -10px;
+}
+
+.cartItem:before {
+  content: "1";
+  display: block;
+  line-height: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: rgb(0, 255, 55);
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+/* animating the div from button to cart */
+.sendtocart .cartItem {
+  display: block;
+  animation: XAxis 1s forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+
+.sendtocart .cartItem:before {
+  animation: YAxis 1s alternate forwards cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.cartDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #333;
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+.cartDiv i {
+  color: #fff;
+}
+
+.cartDiv:before {
+  content: attr(data-totalitems);
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 600;
+  top: -12px;
+  right: -12px;
+  background: rgb(0, 255, 55);
+  width: 25px;
+  padding: 0.2rem;
+  border-radius: 50%;
+  text-align: center;
+}
+.shake {
+  animation: shake 1s ease-in-out forwards;
+}
+
+@keyframes XAxis {
+  100% {
+    transform: translateX(calc(50vw - 105px));
+  }
+}
+
+@keyframes YAxis {
+  100% {
+    transform: translateY(calc(-50vh + 75px));
+  }
+}
+
+@keyframes shake {
+  25% {
+    transform: translateX(-16px);
+  }
+  50% {
+    transform: translateX(-14px);
+  }
+  75% {
+    transform: translateX(12px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

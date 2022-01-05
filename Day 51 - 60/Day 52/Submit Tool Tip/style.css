@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    background-color: #81FF00;
+}
+
+.submit-btn {
+    background: #7e00ff;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px 40px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    box-shadow:5px 5px 20px rgba(0,0,0,0.6),
+    inset -2px -2px 20px rgba(0,0,0,0.1);
+}
+.submit-btn:focus{
+    outline: 0;
+}
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+.submit-btn:hover .tooltip {
+    transform: translate(-50%,120%);
+    opacity: 1;
+}
+.tooltip {
+    background-color: #fff;
+    font-size: 1rem;
+    border-radius: 2px;
+    color: #333;
+    font-weight: 300;
+    padding: 15px 30px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 300px;
+    opacity: 0;
+    transform: translate(-50%,0%);
+    transition: all 0.5s ease;
+    box-shadow:2px 2px 30px rgb(255, 254, 254),
+    inset -2px -2px 20px rgba(0,0,0,0.1);
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.5);
+    }
+    75% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Krona+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #b2fefa; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0ed2f7,
+    #b2fefa
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0ed2f7,
+    #b2fefa
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+}
+h1 {
+  font-family: "RocknRoll One", sans-serif;
+}
+.direct {
+  position: fixed;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.letters {
+  perspective: 1000px;
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.letters span {
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+  line-height: 0.8;
+  font-size: 10rem;
+}
+
+.letters span.active {
+  animation: jump 2s ease-in-out;
+  transform-origin: bottom left;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(0, 0) rotate(180deg);
+  }
+  25% {
+    transform: scale(2) translate(0, -150px);
+  }
+  75% {
+    transform: scale(1.1, 1.1) translate(0, 200px);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .letters span {
+    font-size: 8rem;
+    padding-bottom: 2rem;
+  }
+}

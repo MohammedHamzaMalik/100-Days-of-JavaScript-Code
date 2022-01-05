@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  background: #f0c27b;
+}
+.wrapper {
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(./background.png);
+  overflow: hidden;
+}
+.score {
+  font-size: 5rem;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+.countDown {
+  position: absolute;
+  top: 490px;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #000;
+}
+button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  font-size: 1rem;
+  transform: translate(-50%, 0);
+  background: black;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  z-index: 200;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+button:hover {
+  background: #f0c27b;
+  color: black;
+}
+.game {
+  width: 600px;
+  height: 400px;
+  margin: 70px auto;
+  z-index: 200;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hole {
+  overflow: hidden;
+  flex: 1 0 33.33%;
+  position: relative;
+}
+.hole::after {
+  content: "";
+  display: block;
+  background-image: url(./sand1.png);
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  z-index: 2;
+  bottom: -30px;
+  background-size: contain;
+}
+.mole {
+  background-image: url(./yoda1.png);
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.small {
+  background-size: 60%;
+}
+.large {
+  background-size: 80%;
+}
+.hole.up .mole {
+  cursor: grab;
+  top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    zoom: 0.7;
+  }
+}

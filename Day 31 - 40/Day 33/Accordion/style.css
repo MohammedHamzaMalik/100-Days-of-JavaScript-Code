@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  background: #fae6c8;
+}
+h1 {
+  display: flex;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+}
+.container {
+  max-width: 100%;
+}
+
+.container .accordion {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.container .accordion .heading {
+  position: relative;
+  padding: 15px;
+  font-size: 1.5rem;
+  background: #ff9900;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.container .accordion .heading::before {
+  content: "+";
+  position: absolute;
+  right: 2.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  font-weight: 800;
+}
+/* changing + to -  */
+.container .accordion.active .heading::before {
+  content: "-";
+  font-weight: 800;
+  border-radius: 2px;
+}
+.container .accordion .text {
+  position: relative;
+  height: 0;
+  background: #fff;
+  overflow: hidden;
+  overflow-y: auto;
+  font-size: 1rem;
+  transition: 0.5s;
+  border-radius: 2px;
+}
+.container .accordion.active .text {
+  height: 100px;
+  padding: 10px;
+}

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: repeating-linear-gradient(
+      0deg,
+      #fff 0%,
+      #fff 50%,
+      #000 50%,
+      #000 100%
+    ),
+    repeating-linear-gradient(90deg, #fff 0%, #fff 50%, #000 50%, #000 100%);
+  background-size: 30px 30px;
+  background-blend-mode: difference;
+  font-family: "Reggae One", cursive;
+  cursor: grab;
+}
+
+/* h1 {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 16rem;
+  letter-spacing: 0.1rem;
+} */
+
+span {
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #333;
+  pointer-events: none;
+  border-radius: 50%;
+  background: url(https://images.pexels.com/photos/712618/pexels-photo-712618.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-size: cover;
+  background-attachment: fixed;
+}

@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  flex-direction: row;
+  background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.container {
+  height: 50vh;
+  width: 25vw;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 25px;
+}
+h2 {
+  padding-top: 25px;
+  color: #333;
+  font-size: 2rem;
+}
+.eleInput input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+button {
+  position: relative;
+  height: 35px;
+  width: 100px;
+  border-radius: 5px;
+  border: 0;
+  margin: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+#addBtn:hover {
+  background-color: greenyellow;
+  transform: scale(1.2);
+}
+#deleteBtn:hover {
+  background-color: red;
+  transform: scale(1.2);
+}
+.input p {
+  padding-top: 10px;
+}

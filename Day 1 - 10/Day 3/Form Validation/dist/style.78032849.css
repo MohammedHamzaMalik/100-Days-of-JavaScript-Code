@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #B2FEFA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+
+.header {
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.control-form {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.control-form label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.control-form input {
+    border: 2px solid #f7f7f7;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.control-form input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.control-form.success input {
+    border-color: #2ecc71;
+}
+.control-form.fail input {
+    border-color: #e74c3c;
+}
+
+.control-form i {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.control-form.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+.control-form.fail i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.control-form small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.control-form.fail small {
+    visibility: visible;
+}
+
+.form button {
+    background-color: #0ED2F7;
+    border: 2px solid #0ED2F7;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/*# sourceMappingURL=/style.78032849.css.map */
