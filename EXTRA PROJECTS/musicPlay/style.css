@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .songplay{
+        @apply bg-gradient-to-bl from-pink-400 to-purple-500 dark:from-pink-500 shadow-md shadow-black dark:to-purple-500 w-9 px-3 py-2.5 rounded-xl
+    }
+    .imagePlay{
+        @apply w-full h-36 md:w-40 md:h-48 duration-200 group-hover:scale-105 rounded-md shadow-lg shadow-black dark:shadow-slate-900 group-hover:shadow-lg group-hover:shadow-purple-500 dark:group-hover:shadow-purple-800
+    }
+}

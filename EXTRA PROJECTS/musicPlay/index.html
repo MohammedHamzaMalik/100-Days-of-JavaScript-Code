@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>μsic Play</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="Untitled_design__1_-removebg-preview.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script>
+      if ( localStorage.getItem("color-theme") === "dark" || (!("color-theme " in localStorage) && window.matchMedia("(prefer-color-scheme: dark").matches))
+        {
+          document.documentElement.classList.add("dark")
+        } else{
+          document.documentElement.classList.remove("dark")
+        }
+    </script>
+
+  </head>
+  <body class="bg-white duration-150 dark:duration-100 dark:bg-[#100F0F]">
+    <!-- Navbar -->
+    <nav class="bg-gray-100 md:duration-200 md:dark:duration-75 text-slate-900 dark:text-gray-50 dark:bg-black shadow-md w-full">
+      <div class="flex flex-row justify-between items-center space-x-4">
+        <div class="flex items-center md:pl-6 space-x-8 px-1 py-3">
+          <div id="reload" class="flex items-center cursor-pointer ">
+            <div><img id="darkImg" src="Untitled_design-removebg-preview.png" class="w-12 rounded-full  dark:block hidden" alt="" /></div>
+            <div><img id="lightImg" src="Untitled_design-removebg-preview.png" class="w-12 rounded-full block dark:hidden" alt=""></div>
+            <div class="font-extrabold mx-1 font-sans text-center dark:text-gray-100 text-black text-xl">μsic <i class="fa-solid text-sm text-center fa-play"></i></div>
+          </div>
+        </div>
+        
+        <div class="right px-4 space-x-4 md:space-x-6 md:pr-10 flex items-center">
+          <button id="darkbtn" class="text-gray-900 dark:text-gray-100 hover:bg-gray-300 dark:hover:bg-gray-700 focus:outline-none rounded-xl w-10 px-2.5 py-2">
+            <div id="theme-toggle-light-icon" class="hidden">
+              <i  class="fa-solid fa-sun"></i>
+            </div>
+            <div id="theme-toggle-dark-icon" class="hidden">
+              <i  class="fa-solid fa-moon"></i>
+            </div>
+          </button>
+          <a
+              href="https://www.linkedin.com/in/udit-narayan-singh-aab63a1b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6UXUiSoERgen1i1p3eOSSw%3D%3D"
+              target="_blank"
+              class="font-bold text-black hover:text-slate-800 active:bg-red-900 dark:text-gray-300 dark:hover:text-white hover:scale-105 duration-200"
+              >About</a
+            >
+        </div>
+      </div>
+    </nav>
+    <div
+      class="flex items-center md:justify-start justify-center mt-3 md:ml-14 md:mt-4"
+    >
+      <h1
+        class="text-xl md:text-3xl text-slate-900 dark:text-gray-50 font-sans font-bold md:font-semibold hover:underline hover:underline-offset-2"
+      >
+        My Playlist
+      </h1>
+    </div>
+
+    <!-- Playlist -->
+    <section class="playlist">
+      <div class="flex">
+        <div
+          class="card mb-16 md:mb-0 bg-gray-100 dark:bg-[#131313] md:flex overflow-scroll duration-100 dark:duration-150 md:py-8 md:px-4 md:flex-row rounded-2xl px-2 py-3 my-2 mx-1 md:mt-6 w-full md:m-10 md:space-y-0"
+        >
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 gap-5 md:flex md:flex-row space-x-0 md:space-y-0 md:space-x-6"
+          >
+            <div
+              class="inner-card songNu group flex flex-col justify-between dark:bg-[#100F0F] duration-75 dark:duration-200 shadow-lg bg-gray-50 hover:bg-black/20 rounded-md space-y-4 dark:hover:bg-white/5 p-3"
+            >
+              <div class="relative">
+                <img id="0"
+                  src="covers/one_kiss.jpeg"
+                  class="imagePlay "
+                  alt="">
+                  <div class="hidden group-hover:block group-hover:absolute right-2 bottom-2">
+                    <i
+                            id="0"
+                            class="fa-solid songplay fa-play"
+                          ></i>
+                    </div>
+                </div>
+              
+              <div>
+                <div
+                  class="songName text-center md:text-left text-slate-900 dark:text-gray-50 md:mb-2 md:text-lg text-xs font-bold"
+                >
+                  One Kiss
+                </div>
+                <div class="david w-40 text-gray-500 text-sm hidden md:block">
+                  One kiss (with Dua Lipa)
+                </div>
+              </div>
+            </div>
+            <div
+              class="inner-card songNu group flex flex-col justify-between dark:bg-[#100F0F] shadow-lg duration-75 dark:duration-200 bg-gray-50 hover:bg-black/20 rounded-md space-y-4 dark:hover:bg-white/5 p-3"
+            >
+              <div class="relative">
+                <img id="1"
+                  src="covers/levitating.jpeg"
+                  class="imagePlay"
+                  alt=""
+                />
+
+                <div class="hidden group-hover:block group-hover:absolute right-2 bottom-2 ">
+                  <i
+                          id="1"
+                          class="fa-solid songplay fa-play"
+                        ></i>
+                  </div>
+              </div>
+              <div> 
+                <div
+                  class="songName text-center md:text-left text-slate-900 dark:text-gray-50 md:mb-2 md:text-lg text-xs font-bold"
+                >
+                  Levitating
+                </div>
+                <div class="david w-40 text-gray-500 text-sm hidden md:block">
+                  Levitating by Dua Lipa (feat. DaBaby)
+                </div>
+              </div>
+            </div>
+            <div
+              class="inner-card songNu group flex flex-col justify-between dark:bg-[#100F0F] shadow-lg duration-75 dark:duration-200 bg-gray-50 hover:bg-black/20 rounded-md space-y-4 dark:hover:bg-white/5 p-3"
+            >
+              <div class="relative">
+                <img id="2"
+                  src="covers/pv2.jpeg"
+                  class="imagePlay"
+                  alt=""
+                />
+                <div class="hidden group-hover:block group-hover:absolute right-2 bottom-2 ">
+                    <i
+                            id="2"
+                            class="fa-solid songplay fa-play"
+                          ></i>
+                  </div>
+              </div>
+              <div>
+                <div
+                  class="songName text-center md:text-left text-slate-900 dark:text-gray-50 md:mb-2 md:text-lg text-xs font-bold"
+                >
+                  Pink Venom
+                </div>
+                <div class="david w-40 text-gray-500 text-sm hidden md:block">
+                  BLACKPINK
+                </div>
+              </div>
+            </div>
+            <div
+              class="inner-card songNu group flex flex-col justify-between dark:bg-[#100F0F] shadow-lg duration-75 dark:duration-200 bg-gray-50 hover:bg-black/20 rounded-md space-y-4 dark:hover:bg-white/5 p-3"
+            >
+              <div class="relative">
+                <img id="3"
+                  src="covers/dudu.png"
+                  class="imagePlay"
+                  alt=""
+                />
+                <div class="hidden group-hover:block group-hover:absolute right-2 bottom-2 ">
+                    <i
+                            id="3"
+                            class="fa-solid songplay fa-play"
+                          ></i>
+                  </div>
+              </div>
+              <div>
+                <div
+                  class="songName text-center md:text-left text-slate-900 dark:text-gray-50 md:mb-2 md:text-lg text-xs font-bold"
+                >
+                  DDU-DU-DDU-DU
+                </div>
+                <div class="david w-40 text-gray-500 text-sm hidden md:block">
+                  BLACKPINK
+                </div>
+              </div>
+            </div>
+            <div
+              class="inner-card songNu group flex flex-col justify-between dark:bg-[#100F0F] shadow-lg duration-75 dark:duration-200 bg-gray-50 hover:bg-black/20 rounded-md space-y-4 dark:hover:bg-white/5 p-3"
+            >
+              <div class="relative">
+                <img id="4"
+                  src="covers/unstop.jpeg"
+                  class="imagePlay"
+                  alt=""
+                />
+                <div class="hidden group-hover:block group-hover:absolute right-2 bottom-2 ">
+                    <i
+                            id="4"
+                            class="fa-solid songplay fa-play"
+                          ></i>
+                  </div>
+              </div>
+              <div>
+                <div
+                  class="songName text-center md:text-left text-slate-900 dark:text-gray-50 md:mb-2 md:text-lg text-xs font-bold"
+                >
+                  Unstoppable
+                </div>
+                <div class="david w-40 text-gray-500 text-sm hidden md:block">
+                  Unstoppable Sia
+                </div>
+              </div>
+            </div>
+            <div
+              class="inner-card songNu group flex flex-col justify-between dark:bg-[#100F0F] shadow-lg duration-75 dark:duration-200 bg-gray-50 hover:bg-black/20 rounded-md space-y-4 dark:hover:bg-white/5 p-3"
+            >
+              <div class="relative">
+                <img id="5"
+                  src="covers/butter.png"
+                  class="imagePlay"
+                  alt=""
+                />
+                <div class="hidden group-hover:block group-hover:absolute right-2 bottom-2 ">
+                    <i
+                            id="5"
+                            class="fa-solid songplay fa-play"
+                          ></i>
+                  </div>
+              </div>
+              <div>
+                <div
+                  class="songName text-center md:text-left text-slate-900 dark:text-gray-50 md:mb-2 md:text-lg text-xs font-bold"
+                >
+                  Butter
+                </div>
+                <div class="david w-40 text-gray-500 text-sm hidden md:block">
+                  BTS
+                </div>
+              </div>
+            </div>
+            <div
+              class="inner-card songNu group flex flex-col justify-between dark:bg-[#100F0F] shadow-lg duration-75 dark:duration-200 bg-gray-50 hover:bg-black/20 rounded-md space-y-4 dark:hover:bg-white/5 p-3"
+            >
+              <div class="relative">
+                <img id="6"
+                  src="covers/kill.jpeg"
+                  class="imagePlay"
+                  alt=""
+                />
+                <div class="hidden group-hover:block group-hover:absolute right-2 bottom-2 ">
+                    <i
+                            id="6"
+                            class="fa-solid songplay fa-play"
+                          ></i>
+                  </div>
+              </div>
+              <div>
+                <div
+                  class="songName text-center md:text-left text-slate-900 dark:text-gray-50 md:mb-2 md:text-lg text-xs font-bold"
+                >
+                  Kill This Love
+                </div>
+                <div class="david w-40 text-gray-500 text-sm hidden md:block">
+                  BLACKPINK
+                </div>
+              </div>
+            </div>
+            <div
+              class="inner-card songNu group flex flex-col justify-between dark:bg-[#100F0F] shadow-lg duration-75 dark:duration-200 bg-gray-50 hover:bg-black/20 rounded-md space-y-4 dark:hover:bg-white/5 p-3"
+            >
+              <div class="relative">
+                <img id="7"
+                  src="covers/new.jpeg"
+                  class="imagePlay"
+                  alt=""
+                />
+                <div class="hidden group-hover:block group-hover:absolute right-2 bottom-2 ">
+                    <i
+                            id="7"
+                            class="fa-solid songplay fa-play"
+                          ></i>
+                  </div>
+              </div>
+              <div>
+                <div
+                  class="songName text-center md:text-left text-slate-900 dark:text-gray-50 md:mb-2 md:text-lg text-xs font-bold"
+                >
+                  New Rules
+                </div>
+                <div class="david w-40 text-gray-500 text-sm hidden md:block">
+                  Dua Lipa
+                </div>
+              </div>
+            </div>
+            <div
+              class="inner-card songNu group flex flex-col justify-between dark:bg-[#100F0F] shadow-lg duration-75 dark:duration-200 bg-gray-50 hover:bg-black/20 rounded-md space-y-4 dark:hover:bg-white/5 p-3"
+            >
+              <div class="relative">
+                <img id="8"
+                  src="covers/how.jpeg"
+                  class="imagePlay"
+                  alt=""
+                />
+                <div class="hidden group-hover:block group-hover:absolute right-2 bottom-2 ">
+                    <i
+                            id="8"
+                            class="fa-solid songplay fa-play"
+                          ></i>
+                  </div>
+              </div>
+              <div>
+                <div
+                  class="songName text-center md:text-left text-slate-900 dark:text-gray-50 md:mb-2 md:text-lg text-xs font-bold"
+                >
+                  How You Like That
+                </div>
+                <div class="david w-40 text-gray-500 text-sm hidden md:block">
+                  BLACKPINK
+                </div>
+              </div>
+            </div>
+            <div
+              class="inner-card songNu group flex flex-col justify-between dark:bg-[#100F0F] shadow-lg duration-75 dark:duration-200 bg-gray-50 hover:bg-black/20 rounded-md space-y-4 dark:hover:bg-white/5 p-3"
+            >
+              <div class="relative">
+                <img id="9"
+                  src="covers/infinity.jpeg"
+                  class="imagePlay"
+                  alt=""
+                />
+                <div class="hidden group-hover:block group-hover:absolute right-2 bottom-2 ">
+                    <i
+                            id="9"
+                            class="fa-solid songplay fa-play"
+                          ></i>
+                  </div>
+              </div>
+              <div>
+                <div
+                  class="songName text-center md:text-left text-slate-900 dark:text-gray-50 md:mb-2 md:text-lg text-xs font-bold"
+                >
+                  Infinity
+                </div>
+                <div class="david w-40 text-gray-500 text-sm hidden md:block">
+                  James Young
+                </div>
+              </div>
+            </div>
+            <div
+              class="inner-card songNu group flex flex-col justify-between dark:bg-[#100F0F] shadow-lg duration-75 dark:duration-200 bg-gray-50 hover:bg-black/20 rounded-md space-y-4 dark:hover:bg-white/5 p-3"
+            >
+              <div class="relative">
+                <img id="10"
+                  src="covers/dynamite.jpeg"
+                  class="imagePlay"
+                  alt=""
+                />
+                <div class="hidden group-hover:block group-hover:absolute right-2 bottom-2 ">
+                    <i
+                            id="10"
+                            class="fa-solid songplay fa-play"
+                          ></i>
+                  </div>
+              </div>
+              <div>
+                <div
+                  class="songName text-center md:text-left text-slate-900 dark:text-gray-50 md:mb-2 md:text-lg text-xs font-bold"
+                >
+                  Dynamite
+                </div>
+                <div class="david w-40 text-gray-500 text-sm hidden md:block">
+                  BTS
+                </div>
+              </div>
+            </div>
+            <div
+              class="inner-card songNu group flex flex-col justify-between dark:bg-[#100F0F] shadow-lg duration-75 dark:duration-200 bg-gray-50 hover:bg-black/20 rounded-md space-y-4 dark:hover:bg-white/5 p-3"
+            >
+              <div class="relative">
+                <img id="11"
+                  src="covers/taki.jpeg"
+                  class="imagePlay"
+                  alt=""
+                />
+                <div class="hidden group-hover:block group-hover:absolute right-2 bottom-2 ">
+                    <i
+                            id="11"
+                            class="fa-solid songplay fa-play"
+                          ></i>
+                  </div>
+              </div>
+              <div>
+                <div
+                  class="songName text-center md:text-left text-slate-900 dark:text-gray-50 md:mb-2 md:text-lg text-xs font-bold"
+                >
+                  Taki Taki
+                </div>
+                <div class="david w-40 text-gray-500 text-sm hidden md:block">
+                  DJ Snake, Selena Gomez, Ozuna, Cardi B
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom bar -->
+    
+    <div class="b-bar">
+      <div class="con duration-200 dark:duration-75 dark:bg-[#131313] bg-gray-100 rounded-t-sm md:rounded-none fixed -bottom-0.5 md:bottom-0 w-full flex flex-col">
+        <div id="smProgressCon" class=" bg-transparent flex md:hidden w-full h-1">
+          <div id="sm-progress" class="rounded-sm h-1 bg-gradient-to-r from-purple-700  to-pink-500 dark:from-purple-500 dark:to-pink-500"></div>
+        </div>
+
+        <div class="flex flex-row items-center justify-between px-4 pb-2 pt-1.5 space-x-4"> 
+          <div class="img flex items-center w-48 space-x-2 md:space-x-4">
+            <img id="bCover" src="covers/one_kiss.jpeg" class="rounded-md w-10 h-12 " alt="">
+            <div class="b_songName text-slate-900 dark:text-gray-100 text-sm font-medium flex">One Kiss</div>
+          </div>
+          <div class="flex items-center justify-center md:w-full max-w-4xl md:space-y-4 flex-col">
+            <div class="icons flex md:text-xl text-gray-900  dark:text-gray-300/80 space-x-6 items-center ">
+              <i id="previous" class="fa-solid hover:scale-105 duration-100 fa-backward"></i>
+              <i id="masterPlay" class="fa-solid w-4 hover:scale-105 duration-100 text-xl md:text-2xl fa-play"></i>
+              <i id="next" class="fa-solid hover:scale-105 duration-100 fa-forward"></i>
+            </div>
+            <div class="md:flex flex-row items-center justify-between w-full max-w-3xl space-x-2 progress hidden ">
+              <div id="current" class="text-sm text-slate-900 dark:text-gray-300/50">00:00</div>
+              <div id="progressCon" class="md:flex  bg-gray-500/40 dark:bg-gray-400/30 w-11/12 max-w-2xl h-1 hover:h-2 duration-200 rounded-lg ">
+                <div id="progress" class=" rounded-lg bg-gradient-to-r from-purple-700 via-blue-600 to-pink-500 dark:from-pink-500 dark:via-blue-500 dark:to-purple-500"></div>
+              </div>
+              <div id="duration" class="text-sm text-slate-900 dark:text-gray-300/50">03:35</div>
+            </div>
+          </div>
+          <div class="w-40 items-center justify-center md:flex hidden">
+            <i id="shuffle" class="fa-solid fa-shuffle hidden md:block text-gray-500 "></i>
+          </div>
+        </div>    
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- bg-slate-900/80 dark:bg-gray-200 -->
