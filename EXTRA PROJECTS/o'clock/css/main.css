@@ -1,0 +1,62 @@
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  height: 100%;
+}
+
+/* .container {
+  margin: 0px;
+  height: 100%;
+  margin: 50%;
+} */
+
+.clock {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 10px 100px, rgba(0, 0, 0, 0.1) 0 4px 60px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 56px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    ". twelve ."
+    "nine . three"
+    ". six .";
+}
+
+.clock > span {
+  padding: 10px;
+  font-weight: 500;
+}
+
+.clock > .clock-wise {
+  position: absolute;
+  transform-origin: bottom;
+  bottom: 50%;
+}
+
+.clock > .clock-wise.clock-seconds {
+  width: 2px;
+  height: 30%;
+  background-color: red;
+}
+
+.clock > .clock-wise.clock-minutes {
+  width: 3px;
+  height: 28%;
+  background-color: rgb(94, 94, 94, 0.6);
+}
+
+.clock > .clock-wise.clock-hours {
+  width: 3px;
+  height: 20%;
+  background-color: rgb(75, 75, 75);
+}
